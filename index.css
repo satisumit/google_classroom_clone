@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    height: 9vh;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    
+}
+.left_nav{
+    display: flex;
+    /* justify-content: space-around; */
+    flex-grow: 1;
+}
+#logo{
+    height: 22px;
+    margin: 0 15px 0 0;
+}
+.logo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    position: relative;
+    top: 2px;
+}
+.classroom{
+    color: rgba(0, 0, 0, 0.688);
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 24px;
+}
+.classroom:hover{
+    color: green;
+    text-decoration: underline;
+}
+.action{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-grow: 1;
+}
+.user{
+    background-color: rgb(255, 119, 0);
+    height: 32px;
+    width: 32px;
+    display: flex;
+    color: white;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%
+    
+}
+.user_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 0;
+    height: 50px;
+    width: 50px;
+}
+
+.user_div:hover{
+    background-color: rgba(215, 214, 212, 0.175);
+    border-radius: 50%;
+}
+main{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height: 91vh;
+    color: rgba(0, 0, 0, 0.688);
+} 
+.menu_div{
+    max-width: 320px;
+    min-width: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-right: 1px solid rgba(128, 128, 128, 0.3);
+    flex-grow: 1;
+}
+.menu{
+    padding: 0 20px ;
+}
+.classes{
+    padding: 15px 5px;
+    display: flex;
+    justify-items: left;
+    flex-grow: 5;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+p.class_name{
+    font-size: 24px;
+}
+p.info1,p.teacher{
+    font-size: 14px;
+}
+p.class_name:hover,p.info1:hover,p.teacher:hover{
+    text-decoration: underline;
+}
+.class1{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 15px 20px;
+    border-radius: 3%;
+    height: 300px;
+    width: 300px;
+    border: 1px solid rgba(128, 128, 128, 0.3) ;
+}
+.class1:hover{
+    position: relative;;
+    top: 1px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.up{
+    padding: 0 0 15px 15px;
+    display: flex;
+    background: url("https://www.gstatic.com/classroom/themes/img_code.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+    color: beige;
+}
+.up2{
+    padding: 0 0 15px 15px;
+    display: flex;
+    background: url("https://gstatic.com/classroom/themes/img_read.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+    color: beige;
+}
+.up3{
+    padding: 0 0 15px 15px;
+    display: flex;
+    background: url("https://gstatic.com/classroom/themes/img_breakfast.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+    color: beige;
+}
+.class_info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 15px;
+}
+.empty{
+    flex-grow: 1;
+}
+.teacher_id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 70%;
+    bottom: 12%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    color: aliceblue;
+    font-size: 2rem;
+    background-color: brown;
+}
+.bottom{
+    border-top: 1px solid rgba(128, 128, 128, 0.3) ;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+}
+.icon:hover{
+    background-color: rgba(215, 214, 212, 0.175);
+}
+.home_calendar{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0 10px 0 ;
+    border-bottom:  1px solid rgba(128, 128, 128, 0.3) ;
+}
+.menu_icons{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+    color: rgba(0, 0, 0, 0.703);
+}
+.menu_icons:hover{
+    background-color: rgba(215, 214, 212, 0.175);
+}
+.menu_icons:active{
+    background-color: rgba(51, 109, 153, 0.15);
+}
+.menu_icons span{
+    margin-left: 25px;
+}
+.enrolled{
+    padding: 5px 0;
+    border-bottom:  1px solid rgba(128, 128, 128, 0.3) ;
+}
+.help{
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+}
+.home_div .menu_icons{
+    background-color: rgba(51, 109, 153, 0.15);
+}
+.side_classes{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.class_id{
+    height: 35px;
+    width: 35px;
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: olive;
+    border-radius: 50%;
+}
+.side_class_info{
+    display: flex;
+    flex-direction: column;
+}
