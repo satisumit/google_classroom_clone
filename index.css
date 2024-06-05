@@ -250,3 +250,26 @@ p.class_name:hover,p.info1:hover,p.teacher:hover{
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width:768px) {
+    .text{
+        display: none;
+    }
+    .menu_div{
+        min-width: 80px;
+    }
+
+    #apps{
+        display: none;
+    }
+}
+@media screen and (max-width: 420px) {
+    .menu_div{
+        display: none;
+    }
+    .action .apps{
+        margin-right: 15px;
+    }
+    .user_div{
+        display: none;
+    }
+}
