@@ -17,7 +17,6 @@ header{
 }
 .left_nav{
     display: flex;
-    /* justify-content: space-around; */
     flex-grow: 1;
 }
 #logo{
@@ -92,7 +91,7 @@ main{
 .menu{
     padding: 0 20px ;
 }
-.classes{
+.class_container{
     padding: 15px 5px;
     display: flex;
     justify-items: left;
@@ -129,24 +128,6 @@ p.class_name:hover,p.info1:hover,p.teacher:hover{
     padding: 0 0 15px 15px;
     display: flex;
     background: url("https://www.gstatic.com/classroom/themes/img_code.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 8px 8px 0 0;
-    color: beige;
-}
-.up2{
-    padding: 0 0 15px 15px;
-    display: flex;
-    background: url("https://gstatic.com/classroom/themes/img_read.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 8px 8px 0 0;
-    color: beige;
-}
-.up3{
-    padding: 0 0 15px 15px;
-    display: flex;
-    background: url("https://gstatic.com/classroom/themes/img_breakfast.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px 8px 0 0;
@@ -257,7 +238,12 @@ p.class_name:hover,p.info1:hover,p.teacher:hover{
     .menu_div{
         min-width: 80px;
     }
-
+    .enrolled .side_class_info{
+        display: none;
+    }
+    .enrolled .class_id{
+        height: 30px;
+    }
     #apps{
         display: none;
     }
